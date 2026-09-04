@@ -1,8 +1,102 @@
 :root{
-    --color-1: #fff;
+    --color-1: #003F42;
+    --color-2: #177175;
+    --color-3: #43A3A8;
+    --color-4: #84D7DB;
+    --color-5: #CCFCFF;
+
+    --font-1-2: #fff;
+    --font-3-4-5: #000;
+
+    --color-negro: #000;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+
 }
 
 *{
     margin: 0;
     padding: 0;
+}
+
+header{
+    background-color: var(--color-1);
+    color: var(--font-1-2);
+    width: 100%;
+    height: 5rem;
+    padding: 0.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.contenedor_main{
+    display: flex;
+    margin: 10rem, 0rem, 0rem, 0rem;
+}
+
+
+nav{
+    background-color: var(--color-2);
+    color: var(--font-1-2);
+    width: 15rem;
+    height: 10rem;
+    padding-left: 2%;
+    position: sticky;
+    top: 0;
+}
+
+a{
+    color:var(--font-1-2);
+}
+
+main{
+    background-color: var(--color-3);
+    color: var(--font-1-2);
+    width: 100%;
+    height: 100rem;
+}
+
+h1,h2{
+    text-align: center;
+}
+#titulo1{
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+#titulo2{
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+#tabla{
+    display: grid;
+    justify-content: center;
+    padding: 1rem 0 0 1rem;
+}
+
+.tabla{
+    border: 2px solid var(--color-negro);
+    border-collapse: collapse;
+    justify-content: center;
+}
+
+#tabla2{
+    border: 2px solid var(--color-negro);
+    border-collapse: collapse;
+    margin: 0 0 0 1rem;
+}
+
+th{
+    border: 1px solid var(--color-negro);
+    padding: 0.1rem 0.5rem;
+    text-align: center;
+}
+td{
+    border: 1px solid var(--color-negro);
+    padding: 0.1rem 0.5rem;
+    text-align: center;
 }
