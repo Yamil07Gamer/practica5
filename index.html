@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Práctica 5</h1>
+        <h1>Práctica 5 - CSS</h1>
     </header>
 
     <section class="contenedor_main">
@@ -17,21 +17,23 @@
             <ul>
                 <li><a href="#titulo1">Horario</a></li>
                 <li><a href="#materias">Materias</a></li>
-                <li><a href="">1</a></li>
-                <li><a href="">1</a></li>
+                <li><a href="#regla_descendiente">Regla descendiente</a></li>
+                <li><a href="#fin">Fin</a></li>
+                <li><a href="https://www.youtube.com/watch?v=aWqB331zUEA" target="_blank">Sorpresa</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Cv1AXnX8DjU" target="_blank">Otro link random</a></li>
             </ul>
         </nav>
 
         <main>
-            <section id="tabla">
+            <section id="tabla"> <!-- Practica para nada reciclada-->
                 <section id="titulo1">
-                    <h2>Horario</h2>
+                    <h2>Horario para nada reciclado de la práctica 3</h2>
                 </section>
 
 
                 <table class="tabla" id="horario">
                     <thead>
-                        <tr>
+                        <tr style="background-color: #177175; color: #fff;"> <!-- Incompatibilidad con el css, motivo, si-->
                             <th> Hora </th>
                             <th> Martes </th>
                             <th colspan="2"> Miércoles: Grupo A/B</th> <!--XD haces mitosis para estar en 2 clases, pondre grupo a y grupo b-->
@@ -70,13 +72,13 @@
             <section class="tabla2" id="materias">
 
                 <section id="titulo2">
-                    <h2>Materias</h2>
+                    <h2>Materias para nada reciclado de la práctica 3</h2>
                 </section>
                 
                 <section id="tabla">
                     <table class="tabla2" id="tabla2">
                         <thead>
-                            <tr>
+                            <tr style="background-color: #177175; color: #fff;"> <!-- Otra incompatibilidad con el css, motivo, el día del payaso-->
                                 <th> Materia </th>
                                 <th> Parcial 1 </th>
                                 <th> Parcial 2 </th>
@@ -136,14 +138,31 @@
                         </tfoot>
                     </table>
                 </section>
-
             </section>
+            <section id="regla_descendiente">
+                <h2 id="titulo_regla">Ejemplo de regla con selector descendiente</h2>
+                <img src="imagenes/grandes/half life meme.webp" alt="half-lifememe" id="imagen">
+                <h2 id="titulo_regla">Todo lo este adentro de mi id="regla_descendiente" con el id de "titulo_regla" sera afectado</h2>
+            </section>
+
 
         </main>
     </section>
 
-    <footer>
-        <span>a</span>
+    <footer id="fin">
+        <section id="foot1">
+            <p>Fin de la práctica</p>
+        </section>
+        <section id="foot2">
+            <img src="imagenes/grandes/fnaf-five-nights-at-freddy's.gif" alt="gif_golden_freddy_Attack_of_the_Killer_Queen" id="gif_golden_freddy">
+        </section>
+        <section id="foot3">
+            <p>Fecha de elaboración: 4/09/2026</p><br>
+            <p>Elaborado por: Yamil Alexei Courtois Paredes</p>
+            <p>Carrrera: Licenciatura en Sistemas Computacionales</p>
+            <p>Imagen por: @TheProphetyt</p>
+            <p>Freddy ṕor: Nad</p>
+        </section>
     </footer>
 
 </body>
